@@ -1,0 +1,42 @@
+.goals{
+    font-family: 'Oswald', sans-serif;
+  
+    margin: 0px 8%;
+}
+.faster{
+    color: #f28e00;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Oswald', sans-serif;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 10px 0px
+}
+.card{
+  
+    display: inline-block;
+    background-color: #f3f3f3;
+}
+.card img{
+    height: 300px;
+    width: 300px;
+    filter: grayscale(2);
+    -webkit-filter: grayscale(2);
+}
+.card-content{
+   text-align: center;
+   padding: 10px;
+}
+@media only screen and (max-width: 767px) {
+    .goals-title{
+        font-size: 30px;
+    }
+   
+}
+@media only screen and (min-width: 1280px) {
+.card img{
+    width: 250px;
+}
+}

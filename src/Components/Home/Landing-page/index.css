@@ -1,0 +1,85 @@
+.Landingpage{
+    font-family: 'Oswald', sans-serif;
+  
+}
+.Landingpage{
+height: 630px;
+display: grid;
+grid-template-columns: auto auto;
+}
+
+.landingpage-sect1 img{
+    height: 570px;
+  
+    z-index: 1;
+    filter: grayscale(2);
+    -webkit-filter: grayscale(2);
+    margin-top: 50px;
+}
+.whoarewe{
+    font-size: 150px;
+    color: rgb(216, 215, 215);
+    position: absolute;
+    left: 300px;
+    z-index: -1;
+    letter-spacing: 20px;
+    top: 0px;
+}
+.aboutus-content{
+  
+   
+    width:750px;
+   
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40%;
+  
+
+}
+.aboutus-content h2{
+    color: #f28e00;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+ 
+}
+@media only screen and (max-width: 767px) {
+    .aboutus-content{
+        position: absolute;
+        width:350px;
+        left: 20px;
+        font-size: 16px;
+        bottom:0px;
+        text-align: center;
+       
+        
+    
+    }
+    .whoarewe{
+        font-size: 120px;
+     text-align: center;
+        left: 0px;
+        z-index: -1;
+        letter-spacing: 20px;
+        top: 0px;
+    }
+    .landingpage-sect1 img{
+        height: 500px;
+      width: 100%;
+        z-index: 1;
+        filter: grayscale(2);
+        -webkit-filter: grayscale(2);
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1104px) {
+    .aboutus-content{
+        margin-top: 7%;
+        position: absolute;
+        width:350px;
+        right: 20px;
+        font-size: 16px;
+      
+        text-align: center;
+    
+    }
+}
