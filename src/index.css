@@ -1,7 +1,7 @@
-#root{
+body{
     background-image: url("/src/assets/background\ web\ 1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-                          z-index: -1;
+    z-index: -1;
     font-family: "Oswald", sans-serif;
 }
