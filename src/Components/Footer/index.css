@@ -26,6 +26,9 @@ footer{
 .links section ol li{
     padding: 10px 0px;
 }
+.links section ol li:hover{
+    color: #f28e00;
+}
 .footer-form{
     border-left: solid #f28e00;
     margin: 3% 0px;
