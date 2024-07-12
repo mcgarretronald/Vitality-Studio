@@ -1,3 +1,9 @@
-#root{
+
+body{
     background-color: rgb(233, 232, 232);
+    background-image: url("/src/assets/background\ web\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
 }
