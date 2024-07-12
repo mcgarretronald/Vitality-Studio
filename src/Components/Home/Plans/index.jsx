@@ -3,7 +3,7 @@ import './index.css'
 
 export default function Plans() {
   return (
-    <div className='Plans'>
+    <div className='Plans' >
         <h1 className='Plans-title'>Choose your <span>Plan</span></h1>
         <div className="plancontainer">
             <div className="plancard">
