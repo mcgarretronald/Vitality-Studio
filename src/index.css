@@ -1,6 +1,6 @@
 
 body{
-    background-image: linear-gradient( to top,rgb(233, 232, 232),rgb(205, 204, 204)); 
+    background-color: rgb(233, 232, 232);
     background-image: url("/src/assets/background\ web\ 1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
