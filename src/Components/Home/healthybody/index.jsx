@@ -43,7 +43,7 @@ export default function HealthyBody() {
             </div>
             <div>
                 
-            <ScrollAnimation animateIn='fadeInUp' initiallyVisible={true}>
+            
             <div className='healthybodymindimages'>
           
                 <section className='healthybodymindimagesA'>
@@ -59,7 +59,7 @@ export default function HealthyBody() {
                 </section>
             
             </div>
-            </ScrollAnimation>
+        
 
             </div>
 

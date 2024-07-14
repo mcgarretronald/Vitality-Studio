@@ -11,7 +11,7 @@ import background from '../../assets/background web 1.jpg'
 
 export default function Home() {
   return (
-    <div className='home'>
+    <div className='home' style={{overflowX: 'hidden'}}>
       <NavigationBar />
       <Landingpage />
       <HealthyBody />

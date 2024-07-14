@@ -25,7 +25,7 @@
 }
 .card img{
     height: 300px;
-    width: 300px;
+    width: 250px;
     filter: grayscale(2);
     -webkit-filter: grayscale(2);
 }
@@ -37,18 +37,10 @@
     .goals-title{
         font-size: 30px;
     }
-    .card img{
-        width: 330px;
-        
-    }
+  
     
     
    
   
    
-}
-@media only screen and (min-width: 1280px) {
-.card img{
-    width: 200px;
-}
 }
