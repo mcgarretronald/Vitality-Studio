@@ -37,10 +37,18 @@
     .goals-title{
         font-size: 30px;
     }
+    .card img{
+        width: 330px;
+        
+    }
+    
+    
+   
+  
    
 }
 @media only screen and (min-width: 1280px) {
 .card img{
-    width: 250px;
+    width: 200px;
 }
 }
