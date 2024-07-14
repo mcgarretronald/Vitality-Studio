@@ -1,7 +1,7 @@
 .healthybodyhealthymind{
     display: grid;
     margin: 10% 5%;
-    
+    overflow-x: hidden;
     font-family: 'Oswald', sans-serif;
     grid-template-columns:30% 70%;
     gap: 20px;
