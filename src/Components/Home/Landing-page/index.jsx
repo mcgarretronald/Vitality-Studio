@@ -9,7 +9,7 @@ export default function Landingpage() {
        
         <section className='landingpage-sect1'>
         <h1 className='whoarewe'>WHO ARE <br /> WE</h1>
-        <ScrollAnimation animateIn='fadeInLeft' initiallyVisible={true}>
+        <ScrollAnimation animateIn='fadeInLeft' initiallyVisible={true} animateOnce={true}>
                   <img src={muscelman} alt="muscel man" />
       
         </ScrollAnimation>
@@ -18,7 +18,7 @@ export default function Landingpage() {
         <section className='aboutus'>
             <div className="aboutus-content">
          
-              <ScrollAnimation animateIn='fadeInRight' initiallyVisible={true}>
+              <ScrollAnimation animateIn='fadeInRight' initiallyVisible={true} animateOnce={true}>
                 <h2>About us</h2>
                 <p>At VitalityVault, we're dedicated to helping you achieve your fitness goals. Since
                     1999, our welcoming, state-of-the-art facility has provided top-notch equipment,
