@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import logo from '../../assets/pngwing.com - 2024-07-08T203434.884.png'
-
+import { Link } from 'react-router-dom';
 
 export default function NavigationBar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -31,11 +31,19 @@ export default function NavigationBar() {
                         <i className="fa-solid fa-bars"></i>
                     </span>
                     <ul className={menuOpen ? 'open' : ''}>
-                        <li>HOME</li>
-                        <li>ABOUT</li>
-                        <li>TRAINERS</li>
-                        <li>PRICES</li>
-                        <li>BOOKINGS</li>
+                        <Link to={'/'} className='active'>
+                            <li>HOME</li>
+                        </Link>
+                        <Link to={'/trainer'} className='active' >
+                            <li>TRAINERS</li>
+                        </Link>
+                        <Link to={'/shop'} className='active'>
+                            <li> SHOP</li>
+                        </Link>
+                       
+                        <Link to={'/booking'} className='active'>
+                            <li>BOOKINGS</li>
+                        </Link>
                     </ul>
                 </section>
             </nav>

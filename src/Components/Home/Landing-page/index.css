@@ -29,7 +29,7 @@ grid-template-columns: auto auto;
   
    
     width:750px;
-   
+    backdrop-filter: blur(10px);
     font-size: 20px;
     text-align: center;
     margin-top: 40%;
@@ -51,6 +51,7 @@ grid-template-columns: auto auto;
         font-size: 16px;
         bottom:0px;
         text-align: center;
+        backdrop-filter: blur(10px);
        
         
     
@@ -77,9 +78,24 @@ grid-template-columns: auto auto;
         position: absolute;
         width:350px;
         right: 20px;
+        z-index: 1;
         font-size: 16px;
-      
+        backdrop-filter: blur(10px);
         text-align: center;
-    
-    }
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+    .whoarewe{
+        font-size: 90px;
+        text-align: center;
+        left: 0px;
+        z-index: -1;
+        letter-spacing: 20px;
+        top: 0px;
+        filter: blur(5px) ;
+        -webkit-filter: blur(5px) ;
+}
 }
