@@ -5,7 +5,7 @@ import "animate.css/animate.compat.css"
 export default function Plans() {
   return (
     <div className='Plans' >
-        <ScrollAnimation animateIn='tada'>
+        <ScrollAnimation animateIn='tada'animateOnce={true}>
         <h1 className='Plans-title'>Choose your <span>Plan</span></h1>
         </ScrollAnimation>
         <div className="plancontainer">

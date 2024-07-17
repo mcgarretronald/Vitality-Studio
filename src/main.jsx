@@ -10,6 +10,7 @@ import Home from './Components/Home/home.jsx';
 import TrainerPage from './Components/Trainer-page/trainer.jsx';
 import ShopPage from './Components/Shop/shop.jsx';
 import Booking from './Components/Booking/booking.jsx';
+import Profile from './Components/Trainer-page/profile.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/trainer",
     element: <TrainerPage />,
+  },
+  {
+    path: "/trainerprofile",
+    element: <Profile/>,
   },
   {
     path: "/booking",

@@ -14,7 +14,7 @@ export default function Goals() {
             <ScrollAnimation animateIn='fadeInLeft'>
             <h1 className='goals-title'>Achieve your body goals-<span className='faster'>Faster</span> </h1>
             </ScrollAnimation>
-            <ScrollAnimation animateIn='fadeInRight'>
+            <ScrollAnimation animateIn='fadeInRight'  animateOnce={true}>
             <div className="container">
                 <div className="card">
                     <img src={weightloss} alt="Weight loss" />

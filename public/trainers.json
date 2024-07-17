@@ -1,0 +1,87 @@
+{
+  "trainers": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "specialty": "Fitness trainer",
+      "rating": 4.8,
+      "image": "https://img.freepik.com/free-photo/man-preparing-basketball-match_23-2150847414.jpg?ga=GA1.1.1360089291.1716633752&semt=ais_user",
+      "Duties": "Fitness trainers work with individuals to help them identify their fitness level and overall health and create personalized fitness plans based on their physical needs. They assign fitness routines and modify their progress when necessary. They regularly instruct, motivate and encourage their clients to exercise and improve their health. Fitness trainers also educate clients on the proper use of fitness equipment such as treadmills, weights, exercise bikes and elliptical machines. They may additionally answer questions that relate to diet and exercise and engage in first aid, if necessary."
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "specialty": "Lifestyle coach",
+      "rating": 4.7,
+      "image": "https://t3.ftcdn.net/jpg/07/11/29/74/240_F_711297476_pJPbPMuqB884AN28e5l1ZdcqkcZwRuOD.jpg",
+      "Duties": "Lifestyle coaches work with clients to help them improve their lives and achieve their goals. They help motivate their clients to exercise, provide them with tips and advice to help them lose weight and create diet plans for them. They encourage their clients to create their own health and fitness goals and help them recognize when to adjust their strategy for achieving them. Lifestyle coaches frequently help their clients to eliminate unhealthy habits and celebrate with them when they meet their goals. They may also meet with clients to discuss their progress."
+    },
+    {
+      "id": 3,
+      "name": "Mike Johnson",
+      "specialty": "Sports coach",
+      "rating": 4.9,
+      "image": "https://img.freepik.com/free-photo/black-man-training-with-dumbbell-looking-camera_1262-16025.jpg?ga=GA1.1.1360089291.1716633752&semt=ais_user",
+      "Duties": "Sports coaches help train athletes and prepare them for competitions and events. They use their knowledge of the human body to help athletes avoid injury and may utilize first aid to help injured athletes. They additionally help athletes who are in the process of recovering from an injury to improve their functional abilities and physical strength by creating customized exercise plans. Prior to the day of a competition or event, sports coaches organize and supervise practice sessions and create training plans. They may also schedule practices and training sessions while encouraging safe practices."
+    },
+    {
+      "id": 4,
+      "name": "Michael Brown",
+      "specialty": "Personal trainer",
+      "rating": 4.6,
+      "image": "https://img.freepik.com/free-photo/medium-shot-fit-people-together_23-2148948542.jpg?ga=GA1.1.1360089291.1716633752&semt=ais_user",
+      "Duties": " General personal trainers demonstrate fitness routines and techniques to clients, help them exercise to prevent potential injuries from occurring and modify their routines when necessary. They assess each client's physical strengths and weaknesses and create customized exercise plans to help them achieve their personal fitness goals. They track their progress in achieving their goals, lead both individual and group fitness classes, inform individuals about gym safety and provide advice on how to improve nutritional habits. Personal trainers may also explain individual exercises and help clients feel more comfortable doing them."
+    },
+    {
+      "id": 5,
+      "name": "Chris Wilson",
+      "specialty": "Athletic trainer",
+      "rating": 4.5,
+      "image": "https://img.freepik.com/free-photo/athletic-muscular-man-training-gymnastics-gym_23-2150809429.jpg?ga=GA1.1.1360089291.1716633752&semt=ais_user",
+      "Duties":"Athletic trainers typically work with athletes of all ages who are preparing to compete against other athletes and require a lot of training. They apply devices to prevent injury, such as protective tape, evaluate injuries, provide first aid or emergency care and create rehabilitative programs for injured athletes. They provide athletes with a variety of athletic training services to help them perform at their best on the day of a game or sporting event. Athletic trainers may also engage with health professionals and other trainers to prevent and treat injuries and create recovery plans."
+    },
+    {
+      "id": 6,
+      "name": "King Adams",
+      "specialty": "Wellness specialist",
+      "rating": 4.7,
+      "image": "https://img.freepik.com/premium-photo/portrait-muscular-african-american-man-resting-gym-while-looking-camera-healthy-lifestyle_136403-34449.jpg?ga=GA1.1.1360089291.1716633752&semt=ais_user",
+      "Duties":"Wellness specialists guide their clients and help them achieve their wellness and fitness goals and objectives by designing fitness programs and creating training methods according to their needs and specifications. They meet with their clients to discuss their exercise routines, stress levels, nutrition habits and sleep routines to create personalized wellness plans and motivate them to improve their lives. They regularly meet with other trainers and wellness and health professionals to ensure their clients are progressing in their treatment and intervene in situations where they might require immediate medical attention. Wellness specialists may also suggest specific meal recommendations."
+      
+    },
+    {
+      "id": 7,
+      "name": "David Lee",
+      "specialty": "Health coach",
+      "rating": 4.4,
+      "image": "https://img.freepik.com/free-photo/men-training-together-outdoors-with-weights_23-2150765066.jpg?ga=GA1.1.1360089291.1716633752&semt=ais_user",
+      "Duties":"Health coaches assess their clients' current health, develop health goals on their behalf and encourage them to practice healthy habits through diet and exercise. They create an exercise and diet plan for each individual client, prepare guidelines to eliminate unhealthy behaviors and design health care objectives and treatment plans. They often collaborate with their client's health care providers to assess their progress and ensure that they're meeting their goals. Health coaches may also conduct regular health screenings, provide counseling to clients to help them gain confidence and meet with clients either individually or in a group setting."
+
+    },
+    {
+      "id": 8,
+      "name": "Anna Garcia",
+      "specialty": " Exercise specialist",
+      "rating": 4.9,
+      "image": "https://img.freepik.com/free-photo/portrait-smiling-afro-american-sports-man-with-arms-folded-looking-camera_171337-8263.jpg?ga=GA1.1.1360089291.1716633752&semt=ais_user",
+      "Duties":" Exercise specialists plan and design exercise plans to help their clients improve their health and increase their confidence. They instruct their clients on how to exercise properly and transition from one exercise to another. They provide insight into potential weight-loss techniques and may analyze their client's medical history to determine the most effective fitness routine to assign. Exercise specialists may also speak with their client's family members to encourage them to be a source of motivation. Some specialists may work exclusively in health care facilities and help clients recovering from injuries to regain their mobility and recover quickly."
+    },
+    {
+      "id": 9,
+      "name": "Mark Taylor",
+      "specialty": "Performance trainer",
+      "rating": 4.8,
+      "image": "https://img.freepik.com/free-photo/athletic-man-running-black-background_1301-6600.jpg?ga=GA1.1.1360089291.1716633752&semt=ais_user",
+      "Duties": "Trainers who specialize in performance training primarily help highly athletic individuals design effective fitness plans. These plans might include a variety of exercises that enhance strength and physical agility, such as long-distance running. Performance training enables athletes to prepare for optimal performance in their sport of choice and helps reduce the risk of potential injuries."
+    },
+    {
+      "id": 10,
+      "name": "Rahab Martinez",
+      "specialty": "Bodybuilding coach",
+      "rating": 4.6,
+      "image": "https://img.freepik.com/free-photo/front-view-man-holding-ball-gym_23-2149734696.jpg?ga=GA1.1.1360089291.1716633752&semt=ais_user",
+      "Duties":"Bodybuilding coaches help clients improve their muscle tone by designing training plans for them and ensuring that they adhere to them. They encourage clients to lift weights, follow a healthy diet and avoid risking injury. They often create workout schedules and nutrition plans for their clients and meet with them regularly to discuss their progress. Bodybuilding coaches may also help their clients to exert themselves in a safe and healthy way while providing them with additional resources to use to exercise on their own."
+
+    }
+  ]
+}
