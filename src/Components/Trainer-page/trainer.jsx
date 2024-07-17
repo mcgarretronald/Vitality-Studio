@@ -12,7 +12,7 @@ export default function TrainerPage() {
   useEffect(() => {
     async function fetchTrainers() {
       try {
-        const response = await fetch('/public/trainers.json');
+        const response = await fetch('trainers.json');
         const data = await response.json();
         setTrainers(data.trainers); // Set the trainers state with data from the API
       } catch (error) {
