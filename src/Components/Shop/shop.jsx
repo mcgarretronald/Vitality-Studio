@@ -16,7 +16,7 @@ export default function ShopPage() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('/public/equipments.json');
+        const response = await fetch('equipments.json');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
