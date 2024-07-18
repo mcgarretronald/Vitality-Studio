@@ -33,7 +33,10 @@ export default function TrainerPage() {
         {trainers.map(trainer => (
           <Link to={'/trainerprofile'} state={{ trainer }}>
             <div key={trainer.id} className="trainer-card">
-            <img src={trainer.image} alt={trainer.name} className="trainer-image"/>
+              <div className="trainer-imagey">
+              <img src={trainer.image} alt={trainer.name} className="trainer-image"/>
+              </div>
+
             <h2 >{trainer.name}</h2>
             <p>{trainer.specialty}</p>
             <p className='trainer-rating'>Rating: {trainer.rating}</p>
