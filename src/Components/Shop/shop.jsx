@@ -147,9 +147,9 @@ export default function ShopPage() {
       <div className="shop-container">
         {filteredItems.map((item) => (
           <div key={item.id} className="shop-item">
-            <Link to={`/shop/${item.id}`}>
+           
               <img src={item.image} alt={item.name} />
-            </Link>
+            
             <h3>{item.name}</h3>
             <p>{item.price}</p>
             <button
