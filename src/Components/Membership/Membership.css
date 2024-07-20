@@ -1,4 +1,4 @@
-.bookingForm{
+.MembershipForm{
     border: solid;
     font-size: 20px;
     margin: 5px 25% 5%;
@@ -17,7 +17,7 @@
     color: #f28e00;
     font-size: 30px;
 }
-.bookingForm label{
+.MembershipForm label{
     font-size: 30px;
     padding-bottom: 5px;
    
@@ -26,7 +26,7 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-.bookingForm input, .bookingForm select{
+.MembershipForm input, .MembershipForm select{
         padding: 15px  10px;
         width: 97%;
       
@@ -39,15 +39,15 @@ input::-webkit-inner-spin-button {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-.bookingForm select{
+.MembershipForm select{
     width: 100%;
 }
-.bookingForm div {
+.MembershipForm div {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
-.bookingForm select option{
+.MembershipForm select option{
    backdrop-filter: blur(10px);
    height: 40px;
     background-color: rgb(24, 24, 24);
@@ -72,8 +72,8 @@ input::-webkit-inner-spin-button {
     font-size: 20px;
     
 }
-@media screen and (max-width: 600px) {
-    .bookingForm{
+@media screen and (max-width: 712px) {
+    .MembershipForm{
         margin:20% 5%;
     }
 }

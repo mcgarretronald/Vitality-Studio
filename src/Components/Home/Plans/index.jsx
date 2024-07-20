@@ -1,5 +1,6 @@
 import React from 'react'
 import './index.css'
+import { Link } from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.compat.css"
 export default function Plans() {
@@ -10,23 +11,28 @@ export default function Plans() {
         </ScrollAnimation>
         <div className="plancontainer">
             <ScrollAnimation animateIn='bounceInUp'>
-            <div className="plancard">
+                <Link to={'/member'}>
+                <div className="plancard">
               
-                <h2> <span className='basic'>Basic</span> <br />Membership</h2>
+              <h2> <span className='basic'>Basic</span> <br />Membership</h2>
 
-                <h3 className='price'>Ksh 3500/</h3>
-                <ul>
-                    <li>30 min Session</li>
-                    <li>Private GYM</li>
-                    <li>4 Swimming Pool Sessions</li>
-                   
-                </ul>
-              
-            </div>
+              <h3 className='price'>Ksh 3500/</h3>
+              <ul>
+                  <li>30 min Session</li>
+                  <li>Private GYM</li>
+                  <li>4 Swimming Pool Sessions</li>
+                 
+              </ul>
+            
+          </div>
+                
+                </Link>
+          
             </ScrollAnimation>
 
 
             <ScrollAnimation animateIn='bounceInUp'>
+         <Link to={'/member'}>
             <div className="plancard">
               
               <h2> <span className='basic'>Starndard</span> <br />Membership</h2>
@@ -40,11 +46,13 @@ export default function Plans() {
               </ul>
             
           </div>
+          </Link>
           </ScrollAnimation>
 
 
 
           <ScrollAnimation animateIn='bounceInUp'>
+          <Link to={'/member'}> 
           <div className="plancard">
               
               <h2> <span className='basic'>Premium</span> <br />Membership</h2>
@@ -58,6 +66,7 @@ export default function Plans() {
               </ul>
             
           </div>
+        </Link>
           </ScrollAnimation>
     
     

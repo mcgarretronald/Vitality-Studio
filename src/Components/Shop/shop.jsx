@@ -114,7 +114,7 @@ export default function ShopPage() {
 
       {cartVisible && (
         <div className="cartbar">
-          <h2 style={{ display: 'flex', gap: '10px' }}>
+          <h2 style={{ display: 'flex', gap: '10px', color: 'white' }}>
             <div className="close-btn" onClick={toggleCartVisibility}>
               <i className="fa-solid fa-xmark"></i>
             </div>

@@ -1,15 +1,15 @@
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, onValue } from 'firebase/database';
 
-// Your web app's Firebase configuration
+// Your web app's Firebase configuration using environment variables
 const firebaseConfig = {
-  apiKey: "AIzaSyBaLFFPZHtRe0M9zeZVyrZPDFOAkfBToCY",
-  authDomain: "vitality-vault-dbfb4.firebaseapp.com",
-  projectId: "vitality-vault-dbfb4",
-  databaseURL: "https://vitality-vault-dbfb4-default-rtdb.europe-west1.firebasedatabase.app/",
-  storageBucket: "vitality-vault-dbfb4.appspot.com",
-  messagingSenderId: "273561933782",
-  appId: "1:273561933782:web:02ac444096bb97b503b677"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase

@@ -23,6 +23,9 @@
    
     border-radius: 10px;
 }
+.card h2{
+    color: black;
+}
 .card img{
     height: 300px;
     width: 250px;

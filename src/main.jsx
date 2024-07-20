@@ -13,12 +13,14 @@ import Profile from './Components/Trainer-page/profile.jsx';
 import Membership from './Components/Membership/Membership.jsx';
 import TrainerBooking from './Components/Booking/booking.jsx';
 import Admin from './Components/Admin/admin.jsx';
+import ErrorPage from './Components/Error/error.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/shop",

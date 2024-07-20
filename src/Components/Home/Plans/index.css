@@ -41,19 +41,19 @@
 .plancard:hover {
     transition: 1s ease;
     border-radius: 0px;
-    transform: scale(1.2);
+    transform: scale(1.1);
     -webkit-transition: 1s ease;
     -moz-transition: 1s ease;
     -ms-transition: 1s ease;
     -o-transition: 1s ease;
-    -webkit-border-radius: ;
-    -moz-border-radius: ;
-    -ms-border-radius: ;
-    -o-border-radius: ;
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .plancard h2 {
@@ -61,7 +61,7 @@
 }
 
 .basic {
-    color: #f28e00;
+    color: white;
 }
 
 .price {
@@ -72,6 +72,7 @@
 
 .plancard ul li {
     list-style: none;
+    color: white;
     font-size: 20px;
     font-weight: 800;
     padding-left: 10px;

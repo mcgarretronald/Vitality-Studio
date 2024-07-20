@@ -1,0 +1,96 @@
+.error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+.error-container {
+    text-align: center;
+}
+
+.error-code {
+    font-size: 10rem;
+    color: #F28E00;
+    margin: 0;
+}
+
+.error-message {
+    font-size: 1.5rem;
+    color:white;
+    margin: 20px 0;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+.error-button {
+    background-color: #F28E00;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.error-button:hover {
+    background-color: #d07a00;
+}
+
+.error-animation {
+    position: relative;
+    margin-top: 40px;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: #F28E00;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+.shadow {
+    width: 60px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: shrink 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        top: 0;
+    }
+    50% {
+        top: 100px;
+    }
+}
+
+@keyframes shrink {
+    0%, 100% {
+        width: 60px;
+    }
+    50% {
+        width: 40px;
+    }
+}

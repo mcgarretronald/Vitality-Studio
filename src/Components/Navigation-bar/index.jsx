@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import logo from '../../assets/pngwing.com - 2024-07-08T203434.884.png';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function NavigationBar({ cartCount }) {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +14,7 @@ export default function NavigationBar({ cartCount }) {
         <div className='navbar'>
             <nav>
                 <section className='logo'>
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="Vitality Vault Logo" />
                     <section>
                         <span>VITALITY</span>
                         <span style={{ color: "#F28e00" }}>VAULT</span>
@@ -26,30 +26,37 @@ export default function NavigationBar({ cartCount }) {
                         onClick={toggleMenu}
                         aria-expanded={menuOpen}
                         aria-label="Toggle menu"
+                        aria-controls="menu-list"
                     >
                         <i className="fa-solid fa-bars"></i>
                     </span>
-                    <ul className={menuOpen ? 'open' : ''}>
-                        <Link to={'/'} className='active'>
-                            <li>HOME</li>
-                        </Link>
-                        <Link to={'/trainer'} className='active'>
-                            <li>TRAINERS</li>
-                        </Link>
-                        <Link to={'/shop'} className='active'>
-                            <li> SHOP
+                    <ul id="menu-list" className={menuOpen ? 'open' : ''}>
+                        <li>
+                            <NavLink to={'/'} activeClassName='active'>
+                                HOME
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to={'/trainer'} activeClassName='active'>
+                                TRAINERS
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to={'/shop'} activeClassName='active'>
+                                SHOP
                                 {cartCount > 0 && (
                                     <span className="cart-count">{cartCount}</span>
                                 )}
-                            </li>
-                        </Link>
-                        <Link to={'/member'} className='active'>
-                            <li>Membership</li>
-                        </Link>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to={'/member'} activeClassName='active'>
+                                MEMBERSHIP
+                            </NavLink>
+                        </li>
                     </ul>
                 </section>
             </nav>
         </div>
     );
 }
-

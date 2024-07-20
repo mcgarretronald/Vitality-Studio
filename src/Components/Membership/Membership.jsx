@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Membership.css';
 import NavigationBar from '../Navigation-bar';
 import Footer from '../Footer';
@@ -16,15 +16,11 @@ const validationSchema = Yup.object().shape({
 });
 
 export default function Membership() {
-  const [member, setMember] = useState({
-    firstName: '',
-    lastName: '',
-    currentWeight: '',
-    goalWeight: '',
-    email: '',
-    phone: '',
-    membershipPlan: 'basic'
-  });
+  const [key, setKey] = useState(Date.now());
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [key]);
 
   const handleSubmit = async (values, { setSubmitting, resetForm }) => {
     console.log('Form submitted:', values); 
@@ -35,6 +31,7 @@ export default function Membership() {
     // Reset the form
     resetForm();
     setSubmitting(false);
+    setKey(Date.now());
   };
 
   const getdata = async (values) => {
@@ -59,15 +56,23 @@ export default function Membership() {
   };
 
   return (
-    <div>
+    <div key={key}>
       <NavigationBar />
       <Formik
-        initialValues={member}
+        initialValues={{
+          firstName: '',
+          lastName: '',
+          currentWeight: '',
+          goalWeight: '',
+          email: '',
+          phone: '',
+          membershipPlan: 'basic'
+        }}
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
         {({ isSubmitting }) => (
-          <Form method='POST' className='bookingForm'>
+          <Form method='POST' className='MembershipForm'>
             <h1 className='form-title'>Gym Membership Form</h1>
             <label htmlFor="firstName">First Name <sup>*</sup></label>
             <Field type="text" name="firstName" placeholder='First' />
@@ -110,3 +115,4 @@ export default function Membership() {
     </div>
   );
 }
+
