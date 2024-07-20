@@ -31,6 +31,12 @@ export default function NavigationBar({ cartCount }) {
                         <i className="fa-solid fa-bars"></i>
                     </span>
                     <ul id="menu-list" className={menuOpen ? 'open' : ''}>
+                    <li>
+                            <NavLink to={'/admin'} activeClassName='active'>
+                                ADMIN
+                            </NavLink>
+                        </li>
+
                         <li>
                             <NavLink to={'/'} activeClassName='active'>
                                 HOME
