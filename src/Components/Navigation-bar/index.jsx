@@ -43,8 +43,8 @@ export default function NavigationBar({ cartCount }) {
                                 )}
                             </li>
                         </Link>
-                        <Link to={'/booking'} className='active'>
-                            <li>BOOKINGS</li>
+                        <Link to={'/member'} className='active'>
+                            <li>Membership</li>
                         </Link>
                     </ul>
                 </section>

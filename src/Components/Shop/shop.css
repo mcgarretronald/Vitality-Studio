@@ -32,14 +32,15 @@
 
 .search-bar {
     width: 300px;
-    height: 40px;
+    height: 30px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     border: none;
-    padding: 5px 0px;
+    justify-content: center;
+    padding: 5px 10px;
     margin-left: 2%;
 }
 

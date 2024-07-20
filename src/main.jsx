@@ -9,8 +9,11 @@ import {
 import Home from './Components/Home/home.jsx';
 import TrainerPage from './Components/Trainer-page/trainer.jsx';
 import ShopPage from './Components/Shop/shop.jsx';
-import Booking from './Components/Booking/booking.jsx';
 import Profile from './Components/Trainer-page/profile.jsx';
+import Membership from './Components/Membership/Membership.jsx';
+import TrainerBooking from './Components/Booking/booking.jsx';
+import Admin from './Components/Admin/admin.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -30,9 +33,18 @@ const router = createBrowserRouter([
     element: <Profile/>,
   },
   {
-    path: "/booking",
-    element: <Booking />,
+    path: "/member",
+    element: <Membership />,
   },
+  {
+    path: "/booking",
+    element: <TrainerBooking />,
+  },
+  {
+    path: "/admin",
+    element: <Admin/>,
+  }
+ 
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

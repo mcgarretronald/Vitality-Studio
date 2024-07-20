@@ -82,6 +82,7 @@ nav {
 
     nav {
         padding: 0;
+       
     }
 
     .menu {
@@ -90,6 +91,7 @@ nav {
         padding-right: 10px;
     }
     .links ul li {
+        display: none;
         padding: 10px;}
     .links ul {
         display: none;

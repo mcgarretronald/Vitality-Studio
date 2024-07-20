@@ -1,0 +1,28 @@
+.admin-title {
+    text-align: center;
+    margin: 20px 0;
+    color: #f28e00;
+}
+
+h2{
+    color: #f28e00;
+}
+.section {
+    margin: 20px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    backdrop-filter: blur(10px);
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #efedec;
+    padding: 8px;
+}
+
+.data-table th {
+ font-size: 20px;
+    text-align: left;
+}

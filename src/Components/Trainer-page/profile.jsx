@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import NavigationBar from '../Navigation-bar';
 import './trainer.css';
+import { Link } from 'react-router-dom';
 import Footer from '../Footer';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.compat.css"
@@ -9,7 +10,10 @@ import "animate.css/animate.compat.css"
 export default function Profile() {
     const location = useLocation();
     const trainer = location.state.trainer;
-    console.log(trainer);
+
+    if (!trainer) {
+        return <div>Trainer not found</div>;
+    }
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -32,7 +36,7 @@ export default function Profile() {
                     <h2>{trainer.specialty}</h2>
                     <p>{trainer.Duties}</p>
                     <p className='trainer-rating'>Rating: {trainer.rating}</p>
-                    <button type="button" className="book-button">Book</button>
+                    <Link to={'/booking'} state={{ trainer }}><button type="button" className="book-button">Book</button></Link>
                 </section>
 </ScrollAnimation>
             </div>
