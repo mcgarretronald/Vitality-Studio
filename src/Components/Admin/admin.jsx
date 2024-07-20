@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { database, ref, onValue } from '../firebaseconfig'; 
+import { database, ref, onValue } from '../firebaseconfig';
 import NavigationBar from '../Navigation-bar';
 import './admin.css';
 
 const AdminPage = () => {
     const [members, setMembers] = useState([]);
     const [bookings, setBookings] = useState([]);
+    const [password, setPassword] = useState('');
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
 
     useEffect(() => {
+        if (!isAuthenticated) return;
+
         // Fetch members
         const membersRef = ref(database, 'Membership');
         onValue(membersRef, (snapshot) => {
@@ -29,7 +33,44 @@ const AdminPage = () => {
             // Firebase does not provide an easy way to remove listeners directly,
             // but you can consider using another state to track listeners if needed.
         };
-    }, []);
+    }, [isAuthenticated]);
+
+    const handlePasswordChange = (event) => {
+        setPassword(event.target.value);
+    };
+
+    const handleLogin = (event) => {
+        event.preventDefault();
+        // Simple password check
+        if (password === 'password') {
+            setIsAuthenticated(true);
+        } else {
+            alert('Incorrect password');
+        }
+    };
+
+    if (!isAuthenticated) {
+        return (
+            <div>
+                <NavigationBar />
+                <h1 className="admin-title">Admin Login</h1>
+                <form onSubmit={handleLogin} className="login-form">
+                    <label>
+                        Password:
+                        </label>
+                        <input
+                            type="password"
+                            value={password}
+                            onChange={handlePasswordChange}
+                            className="password-input"
+                            s
+                        />
+                    
+                    <button type="submit" className="login-button">Login</button>
+                </form>
+            </div>
+        );
+    }
 
     return (
         <div>
@@ -89,8 +130,6 @@ const AdminPage = () => {
                     </tbody>
                 </table>
             </div>
-
-         
         </div>
     );
 };

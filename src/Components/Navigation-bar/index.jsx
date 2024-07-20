@@ -13,13 +13,17 @@ export default function NavigationBar({ cartCount }) {
     return (
         <div className='navbar'>
             <nav>
+        
                 <section className='logo'>
+                <NavLink to={'/admin'} activeClassName='active'>
                     <img src={logo} alt="Vitality Vault Logo" />
+                    </NavLink>
                     <section>
                         <span>VITALITY</span>
                         <span style={{ color: "#F28e00" }}>VAULT</span>
                     </section>
                 </section>
+             
                 <section className='links'>
                     <span 
                         className='menu' 
@@ -32,9 +36,8 @@ export default function NavigationBar({ cartCount }) {
                     </span>
                     <ul id="menu-list" className={menuOpen ? 'open' : ''}>
                     <li>
-                            <NavLink to={'/admin'} activeClassName='active'>
-                                ADMIN
-                            </NavLink>
+                           
+                         
                         </li>
 
                         <li>

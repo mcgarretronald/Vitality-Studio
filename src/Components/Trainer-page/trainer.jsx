@@ -8,6 +8,7 @@ import "animate.css/animate.compat.css"
 
 export default function TrainerPage() {
   const [trainers, setTrainers] = useState([]);
+  
 
   useEffect(() => {
     async function fetchTrainers() {

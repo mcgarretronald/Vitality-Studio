@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './booking.css';
 import NavigationBar from '../Navigation-bar';
 import Footer from '../Footer';
@@ -10,9 +10,9 @@ import { useLocation } from 'react-router-dom';
 const validationSchema = Yup.object().shape({
   firstName: Yup.string().required('Required'),
   lastName: Yup.string().required('Required'),
- location: Yup.string().required('Required'),
+  location: Yup.string().required('Required'),
   email: Yup.string().email('Invalid email').required('Required'),
- date: Yup.string().required('Required'),
+  date: Yup.string().required('Required'),
   time: Yup.string().required('Required'),
 });
 
@@ -29,12 +29,14 @@ export default function Booking() {
     date: '',
     time: '',
     trainer: trainer.name,
-  
-    
   });
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleSubmit = async (values, { setSubmitting, resetForm }) => {
-    console.log('Form submitted:', values); 
+    console.log('Form submitted:', values);
 
     // Call the getdata function to send the data
     await getdata(values);
@@ -84,7 +86,6 @@ export default function Booking() {
             <Field type="text" name="lastName" placeholder='Last' />
             <ErrorMessage name="lastName" component="div" className="error" />
 
-         
             <label htmlFor="email">Email <sup>*</sup></label>
             <Field type="email" name="email" placeholder='Email' />
             <ErrorMessage name="email" component="div" className="error" />
@@ -108,8 +109,6 @@ export default function Booking() {
             <Field type="text" name="trainer" value={trainer.name} />
             <ErrorMessage name="trainer" component="div" className="error" />
 
-        
-
             <button type="submit" className='bookingsubmit' disabled={isSubmitting}>
               Submit
             </button>
@@ -120,3 +119,4 @@ export default function Booking() {
     </div>
   );
 }
+
